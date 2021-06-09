@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <form action="" method="POST">
+        <div class="todos">
+            <div class="escrita">
+                <label>Nome:
+                    <input class="input" type="text" name="nome" placeholder="Insira seu nome" required>
+                </label>
+            </div>
+            <div class="escrita">
+                <label>E-mail:
+                    <input class="input" type="email" name="email" placeholder="Insira seu e-mail" required>
+                </label>
+            </div>
+
+            <div class="escrita">
+                <label>Idade:
+                    <input id="idade" class="input" type="number" name="idade" min="12" required>
+                </label>
+            </div>
+
+            <div class="escrita">
+                <label>Data de nascimento:
+                    <input class="input" type="date" name="data" required>
+                </label>
+            </div>
+
+            <div class="escrita">
+                <label>Onde voce possui conta:
+
+                    <label>
+                        <input class="input" type="checkbox" name="media-social" value="facebook">
+                        Facebook
+                        <input class="input" type="checkbox" name="media-social" value="instagram">
+                        Instagram
+                        <input class="input" type="checkbox" name="media-social" value="YouTube">
+                        YouTube
+                    </label>
+                </label>
+            </div>
+            <div class="escrita">
+                <label>Sexo:
+                    <input class="input" type=radio name="genero" value="masculino" required>
+                    masculino
+                    <input class="input" type="radio" name="genero" value="feminino" required>
+                    feminino
+                </label>
+            </div>
+
+            <div class="escrita">
+                <label>Cor dos Olhos:
+                    <input class="input" type="color" name="cor-olhos" required>
+                </label>
+            </div>
+
+            <div class="escrita">
+                <p> <label class="biografia">Biografia:</p>
+                <textarea name="bio" cols="30" rows="5" required></textarea>
+                </label>
+            </div>
+
+            <div class="escrita">
+                <label> Foto do perfil:
+                    <input class="input" type="file" accept="image/*" name="foto-perfil" required>
+
+                </label>
+            </div>
+
+            <div class="escrita">
+                <label>Telefone:
+                    <input type="tel" name="telefone" required class="input">
+                </label>
+            </div>
+
+            <div class="escrita">
+                <label> Link do Perfil do Facebook:
+                    <input class="input" type="url" name="perfil-facebook" required>
+                </label>
+            </div>
+
+            <div class="escrita">
+                <label>Senha:
+                    <input class="input" type="password" name="senha" minlength="6" maxlength="8" required>
+            </div>
+            </label>
+
+
+            <div>
+                <button type="reset" name="limpar" class="botão">Limpar</button>
+                <button type="submit" name="enviar" class="botão">Enviar</button>
+            </div>
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>
